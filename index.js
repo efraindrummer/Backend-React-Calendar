@@ -1,8 +1,12 @@
 const express = require('express');
+const { dbConnection } = require('./database/config');
 require('dotenv').config();
 
 //servidor express
 const app = express();
+
+//conectar base de datso mongo
+dbConnection();
 
 //directorio publico
 app.use(express.static('public'));
