@@ -20,6 +20,7 @@ app.use(express.json());
 
 //Rutas 
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/events', require('./routes/events'));
 //TODO: creacion de rutas del auth // creacion, login y renocavion del token
 //CRUD de los eventos
 
